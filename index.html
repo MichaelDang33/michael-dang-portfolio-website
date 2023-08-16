@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatiblle" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Dang's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Michael Dang</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="dropdown-nav">
+        <div class="logo">Michael Dang</div>
+        <div class="dropdown-menu">
+            <div class="dropdown-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Technical Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/IMG_3864.jpg" alt="Michael Dang profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Introducing...</p>
+            <h1 class="title">Michael Dang</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/MikeyResume.pdf')">My Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Michael Dang LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/michaeldang-/'"/>
+                <img src="./assets/github.png" alt="Michael Dang Github Profile" class="icon" onclick="location.href='https://github.com/MichaelDang33'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/IMG_3853.jpg" alt="Profile Picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Years of Excellent Service A++ in <br />Fullstack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>Bachelor's of Science in Health & Exercise Sciences <br />Bachelor's of Science in Nursing <br />General Assembly's Software Enginerring Immersive</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Full-Stack Software Engineer with a background in healthcare and customer service. I carry a diverse array of skills and a client-focused mindset in everything that I do! In my previous career, I was a nurse, and with that clinical experience, I was able to learn a lot about providing exceptional care to achieve a goal. I have communication, problem-solving, and analytic skills from my previous experiences, to work in tandem with my expanding technical skills to contribute to developing projects and software from start to end. Whether it's assisting in an emergency or working to solve a code break, I strive to make a positive impact on anything in front of me. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
+        <div class="skill-details-container">
+            <div class="about-containers"> 
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend Development:</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>jQuery</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>Bootstrap/Skeleton</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Backend Development:</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>Django</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>Node.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>MongoDB</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>Express.js</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill Icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mdproject1.png" alt="MD Project 1" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project One: Michael's Hangman Game</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MichaelDang33/michael-dang-project-1'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mdproject2.png" alt="MD Project 2" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Two: Calendar App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MichaelDang33/michael-dang-project-2'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+        </div>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mdproject3.jpeg" alt="MD Project 1" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Three: Joint MEN Stack Budget Tracker</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MichaelDang33/jv-md-budget-tracker'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="MD Project 4" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Four:</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon" />
+                <p><a href="mailto:michaeldangse@gmail.com">michaeldangse@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/">https://www.linkedin.com/in/michaeldang-/</a></p>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>Please reach out if you have any questions, inquiries, or should you require further assistance or clarification on anything!</p>
+            <p><br />Thank you!!</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
